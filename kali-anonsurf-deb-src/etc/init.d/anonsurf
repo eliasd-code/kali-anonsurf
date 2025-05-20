@@ -307,6 +307,9 @@ function stop {
 	enable_ipv6
 	
 	echo -e " $GREEN*$BLUE Anonymous mode stopped$RESETCOLOR\n"
+ echo "nameserver 1.1.1.1" > /etc/resolv.conf
+ echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+ echo -e " $GREEN*$BLUE DNS set to 1.1.1.1 and 8.8.8.8$RESETCOLOR"
 }
 
 function change {
